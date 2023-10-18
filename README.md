@@ -1,0 +1,1 @@
+# app-static-site-multi-cloud
