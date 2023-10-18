@@ -5,6 +5,12 @@ terraform {
       version = ">= 5.21"
     }
   }
+  backend "s3" {
+    bucket         = "static-site-multicloud-v001"
+    key            = "terraform.tfstate"
+    dynamodb_table = "static-site-multicloud-v001"
+    region         = "us-east-1"
+  }
 }
 
 provider "aws" {
