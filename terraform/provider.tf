@@ -12,6 +12,7 @@ terraform {
   }
 
   backend "s3" {
+    provider       = aws.cloud
     bucket         = "tf-staticsite-s3-state-v001"
     key            = "terraform.tfstate"
     dynamodb_table = "tf-staticsite-s3-state-v001"
