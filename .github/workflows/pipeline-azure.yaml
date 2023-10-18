@@ -1,4 +1,4 @@
-name: Terraform on Azure
+name: Azure pipeline
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
 jobs:
 
   tf-run:
-    name: Terraform on Azure
+    name: Terraform run on Azure
     runs-on: ubuntu-latest
  
     steps:
