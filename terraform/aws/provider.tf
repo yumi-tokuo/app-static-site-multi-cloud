@@ -6,9 +6,9 @@ terraform {
     }
   }
   backend "s3" {
-    bucket         = "static-site-multicloud-v001"
+    bucket         = "tf-notifier-state-cp2"
     key            = "terraform.tfstate"
-    dynamodb_table = "static-site-multicloud-v001"
+    dynamodb_table = "tf-notifier-state-cp2"
     region         = "us-east-1"
   }
 }
