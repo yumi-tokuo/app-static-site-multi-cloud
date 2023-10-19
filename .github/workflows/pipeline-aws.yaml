@@ -3,7 +3,7 @@ name: AWS pipeline
 on:
   push:
     branches:
-    - main
+    - develop
 
 jobs:
 
